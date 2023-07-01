@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'display': ['Playfair Display'],
+      'body': ['Lato'],
+    },
     extend: {},
   },
   plugins: [],
 }
-
