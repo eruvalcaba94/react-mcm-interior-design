@@ -50,10 +50,10 @@ const Footer = () => {
                         ? 'font-body p-3'
                         : 'hidden'
                 }>
-                    <li>Financing</li>
-                    <li>Help Center</li>
-                    <li>Refer & Earn</li>
-                    <li>Promotions</li>
+                    <li className='mb-2'>Financing</li>
+                    <li className='mb-2'>Help Center</li>
+                    <li className='mb-2'>Refer & Earn</li>
+                    <li className='mb-2'>Promotions</li>
                 </ul>
             </div>
             <div>
@@ -69,9 +69,9 @@ const Footer = () => {
                         ? 'font-body p-3'
                         : 'hidden'
                     }>
-                        <li>Call</li>
-                        <li>Text</li>
-                        <li>Email</li>
+                        <li className='mb-2'>Call</li>
+                        <li className='mb-2'>Text</li>
+                        <li className='mb-2'>Email</li>
                     </ul>
                 </div>
                 <div>
