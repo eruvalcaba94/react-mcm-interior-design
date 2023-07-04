@@ -1,0 +1,51 @@
+
+:root {
+    --primary: #b299a2;
+    --secondary: #f6f7f8;
+    --accent: #a2b299;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Button Colors and Styles */
+
+.btn--primary--solid {
+    background: var(--primary);
+    color: #16181d;;
+    border: none;
+}
+
+.btn--secondary--solid {
+    background: var(--secondary);
+    color: #16181d;;
+    border: none;
+}
+
+.btn--primary--outline {
+    background-color: transparent;
+    color: #16181d;;
+    border: solid 2px var(--primary);
+}
+
+.btn--secondary--outline {
+    background-color: transparent;
+    color: #16181d;;
+    border: solid 2px var(--accent);
+}
+
+/* Button Sizes */
+
+.btn--med {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.btn--lg {
+    padding: 15px 30px;
+    font-size: 20px;
+}

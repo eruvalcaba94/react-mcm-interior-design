@@ -18,7 +18,7 @@ const Footer = () => {
     };
 
   return (
-    <div className='bg-gray-500 w-full h-auto'>
+    <div className='bg-accent w-full h-auto'>
         <div className='hidden lg:flex justify-between items-start w-auto pt-16 px-4 lg:px-20 xl:px-28 2xl:px-40  pb-10'>
             <div className='flex'>
                 <div className='mr-7 lg:mr-10'>

@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className='flex items-center bg-slate-200 w-auto h-[64px]'>
+    <div className='flex items-center bg-secondary w-auto h-[64px] sticky top-0 z-20'>
       <div className='flex w-full px-4 md:px-8 lg:px-12 xl:px-20 justify-between'>
         <h2 className='font-display text-2xl'>
           Mid-Century Mindset</h2>
@@ -20,7 +20,7 @@ const NavBar = () => {
           <li>How It Works</li>
           <li>Shop</li>
         </ul>
-        <ul className='hidden lg:flex font-display gap-x-6'>
+        <ul className='hidden lg:flex font-display gap-x-3'>
           <li>Get Started</li>
           <li>Login</li>
         </ul>
@@ -33,7 +33,7 @@ const NavBar = () => {
               ? 'z-10 fixed top-[64px] left-0 w-full ease-in duration-500'
               : 'z-10 fixed top-[64px] left-[-100%] w-full ease-out duration-500'
           }>
-        <div className='absolute flex w-full h-screen bg-gray-400'>
+        <div className='absolute flex w-full h-screen bg-secondary'>
           <div className='w-full h-fit px-5 pt-2 pb-8'>
             <ul className='font-display text-xl  md:text-3xl'>
               <li className='pt-5 pb-4 border-b border-b-slate-600'>

@@ -9,7 +9,16 @@ export default {
       'display': ['Playfair Display'],
       'body': ['Lato'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        textPrimary: '#16181d',
+        textSecondary: '#f5f5f7',
+        background: '#e5e7eb',
+        primary: '#b299a2',
+        secondary: '#f6f7f8',
+        accent: '#a2b299'
+      }
+    },
   },
   plugins: [],
 }
