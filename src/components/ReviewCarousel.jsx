@@ -19,21 +19,24 @@ const ReviewCarousel = ({ reviews }) => {
     <div className="flex ">
         <div className="flex bg-transparent">
             <div className='flex'>
-                <div className='flex p-10 bg-red-500 rounded-2xl'>
+                <div className='flex lg:hidden p-10 bg-secondary rounded-2xl'>
                     <ReviewCard review={reviews[previousIndex]} />
                 </div>
                 <button className="flex justify-center items-center" onClick={goToPreviousReview}>
                 <BsChevronLeft size={24} />
                 </button>
-                <div className='flex p-10 bg-red-500 rounded-2xl'>
+                <div className='flex p-10 bg-secondary rounded-2xl'>
                     <ReviewCard review={reviews[currentIndex]} />
                 </div>
-                <button className="flex justify-center items-center" onClick={goToNextReview}>
+                <button className="flex lg:hidden justify-center items-center" onClick={goToNextReview}>
                 <BsChevronRight size={24} />
                 </button>
-                <div className='flex p-10 bg-red-500 rounded-2xl'>
+                <div className='flex lg:ml-5 p-10 bg-secondary rounded-2xl'>
                     <ReviewCard review={reviews[previousIndex]} />
                 </div>
+                <button className="hidden lg:flex justify-center items-center" onClick={goToNextReview}>
+                <BsChevronRight size={24} />
+                </button>
             </div>
         </div>
     </div>

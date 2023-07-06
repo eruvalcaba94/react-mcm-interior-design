@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import ReviewCarousel from './components/ReviewCarousel'
+import DesignerCarousel from './components/DesignerCarousel'
 import Hero from './assets/green_purple_flower.jpg'
 import LivingRoom from './assets/white_livingroom.jpg'
 import SunlitBedroom from './assets/sunlight_bedroom.jpg'
@@ -63,7 +64,7 @@ const App = () => {
           <img src={LivingRoom} alt="White Living Room" className='object-cover rounded-lg px-2 lg:px-0 w-full h-auto lg:w-1/2' />
         </div>
         <div className='flex flex-col-reverse lg:flex-row-reverse justify-center items-center w-full lg:gap-4 lg:w-auto lg:mb-20 lg:px-10'>
-          <div className='flex flex-col justify-center items-center w-auto pb-10' >
+          <div className='flex flex-col justify-center items-center w-auto pt-5 pb-10' >
             <h2 className='font-display text-3xl mb-5'>
               Elevate Your Space</h2>
             <p className='font-body font-light text-center text-lg md:text-xl'>
@@ -110,7 +111,7 @@ const App = () => {
         <p className='font-body font-light text-center text-lg'>
           - A Really Happy Client</p>
       </div>
-      <div className='bg-[#c0a6dd] mb-5'>
+      <div className='bg-[#c0a6dd]'>
         <div className='flex flex-col lg:flex-row lg:justify-center lg:items-center'>
           <img src={TVLivingroom} alt="TV Living Room" className='object-cover w-full lg:w-1/2 h-auto' />
           <div className='text-center p-10 md:m-5'>
@@ -121,9 +122,22 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center'>
-        <h1>Reviews Carousel</h1>
-        <ReviewCarousel reviews={reviews} />
+      <div>
+        <h2 className='absolute z-10 right-0 -translate-x-5 translate-y-9 font-display text-2xl md:text-4xl'>
+          Our Dream Team, <br className='md:hidden' /> 
+          Your Dream Home</h2>
+        <div className='relative'>
+          <DesignerCarousel />
+        </div>
+      </div>
+      <div className='bg-[#e7c3bb] flex flex-col lg:flex-row justify-center items-center mx-auto'>
+        <div className='flex flex-col justify-center items-center lg:pr-10'>
+          <h3 className='font-body font-medium py-4'>Reviews</h3>
+          <h2 className='flex w-max font-display text-4xl'>Share the love!</h2>
+        </div>
+        <div className='py-10'>
+          <ReviewCarousel reviews={reviews} />
+        </div>
      </div>
       <Footer />
     </div>
