@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
-import { Buttons } from './components/Buttons'
+import ReviewCarousel from './components/ReviewCarousel'
 import Hero from './assets/green_purple_flower.jpg'
 import LivingRoom from './assets/white_livingroom.jpg'
 import SunlitBedroom from './assets/sunlight_bedroom.jpg'
@@ -11,6 +11,29 @@ import Development from './assets/development.jpg'
 import InPerson from './assets/in-person.jpg'
 
 const App = () => {
+  const reviews = [
+    {
+      reviewer: 'John Doe',
+      rating: 4,
+      comment: 'Great product! I highly recommend it.',
+    },
+    {
+      reviewer: 'Jane Smith',
+      rating: 5,
+      comment: 'Excellent service and quality. Will buy again.',
+    },
+    {
+      reviewer: 'Doe Jane',
+      rating: 3,
+      comment: 'It was okay.'
+    },
+    {
+      reviewer: 'Smith John',
+      rating: 2,
+      comment: `wouldn't recommend to my worst enemy`
+    }
+  ];
+
   return (
     <div>
       <NavBar />
@@ -34,7 +57,7 @@ const App = () => {
           <div className='flex flex-col justify-center items-center w-auto mx-10 mt-5 mb-8'>
             <h2 className='font-display md:text-center text-3xl mb-5'>
               Timeless Elegance</h2>
-            <p className='font-body text-center text-lg md:text-xl'>
+            <p className='font-body font-light text-center text-lg md:text-xl'>
               From iconic chairs to sleek coffee tables, we bring timeless elegance to your home.</p>  
           </div>
           <img src={LivingRoom} alt="White Living Room" className='object-cover rounded-lg px-2 lg:px-0 w-full h-auto lg:w-1/2' />
@@ -43,7 +66,7 @@ const App = () => {
           <div className='flex flex-col justify-center items-center w-auto pb-10' >
             <h2 className='font-display text-3xl mb-5'>
               Elevate Your Space</h2>
-            <p className='font-body text-center text-lg md:text-xl'>
+            <p className='font-body font-light text-center text-lg md:text-xl'>
               Discover the perfect harmony of form and function with our expertly curated collection of mid-century modern furniture.</p>  
           </div>
           <img src={SunlitBedroom} alt="Sunlit Bedroom" className='object-cover rounded-lg px-2 lg:px-0 w-full h-auto lg:w-1/2' />
@@ -98,7 +121,10 @@ const App = () => {
           </div>
         </div>
       </div>
-
+      <div className='flex flex-col justify-center items-center'>
+        <h1>Reviews Carousel</h1>
+        <ReviewCarousel reviews={reviews} />
+     </div>
       <Footer />
     </div>
   )

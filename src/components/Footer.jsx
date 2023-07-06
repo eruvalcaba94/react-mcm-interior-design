@@ -129,7 +129,7 @@ const Footer = () => {
             </div>
             <div>
                 <h2 className='font-display text-xl mb-6'>Guarantee Promise</h2>
-                <p className='font-body text-lg'>We're committed to your satisfaction. From handpicked mid-century modern furniture to personalized design guidance, we prioritize quality and timeless style. We work closely with you to create a space that reflects your unique vision.</p>
+                <p className='font-body font-light text-lg'>We're committed to your satisfaction. From handpicked mid-century modern furniture to personalized design guidance, we prioritize quality and timeless style. We work closely with you to create a space that reflects your unique vision.</p>
             </div>
         </div>
     </div>
