@@ -31,7 +31,7 @@ const ReviewCarousel = ({ reviews }) => {
                 <button className="flex justify-center items-center" onClick={goToNextReview}>
                 <BsChevronRight size={24} />
                 </button>
-                <div className='flex p-10 bg-red-500 rounded-2xl overflow-hidden'>
+                <div className='flex p-10 bg-red-500 rounded-2xl'>
                     <ReviewCard review={reviews[previousIndex]} />
                 </div>
             </div>

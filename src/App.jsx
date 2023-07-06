@@ -35,7 +35,7 @@ const App = () => {
   ];
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <NavBar />
       <div className=' bg-black/50 h-screen'>
         <img src={Hero} alt="Mid-Century Living Room" className='absolute -z-10 object-cover w-full h-screen' />
