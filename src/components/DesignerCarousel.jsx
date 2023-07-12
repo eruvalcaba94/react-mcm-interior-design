@@ -17,12 +17,12 @@ const DesignerCarousel = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center bg-red-500 w-full">
+    <div className="relative flex items-center justify-center w-full">
       <button className="absolute z-10 left-0 top-1/2 transform -translate-y-1/2" onClick={goToPreviousExample}>
         <BsChevronLeft size={32} />
       </button>
-      <div className='relative bg-red-500'>
-        <img src={images[currentIndex]} alt="Example" className='bg-black/30 object-cover w-full xl:w-[2560px] h-[520px] md:h-auto xl:max-h-[750px]' />
+      <div className='relative'>
+        <img src={images[currentIndex]} alt="Example" className='object-cover w-full xl:w-[2560px] h-[520px] md:h-auto xl:max-h-[750px]' />
       </div>
       <button className="absolute z-10 right-0 top-1/2 transform -translate-y-1/2" onClick={goToNextExample}>
         <BsChevronRight size={32} />

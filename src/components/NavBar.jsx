@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { BsFacebook, BsTwitter, BsInstagram, BsPinterest } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import Store from '../pages/Store'
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -12,13 +14,13 @@ const NavBar = () => {
   return (
     <div className='flex items-center bg-secondary w-auto h-[64px] sticky top-0 z-20'>
       <div className='flex w-full px-4 md:px-8 lg:px-12 xl:px-20 justify-between'>
-        <h2 className='font-display text-2xl'>
-          Mid-Century Mindset</h2>
+        <Link to='/react-mcm-interior-design' className='font-display text-2xl'>
+          Mid-Century Mindset</Link>
         <ul className='hidden lg:flex font-display gap-x-8'>
           <li>How It Started</li>
           <li>Explore</li>
           <li>How It Works</li>
-          <li>Shop</li>
+          <li><Link to='/store'>Shop</Link></li>
         </ul>
         <ul className='hidden lg:flex font-display gap-x-3'>
           <li>Get Started</li>
@@ -43,7 +45,7 @@ const NavBar = () => {
               <li className='pt-5 pb-4 border-b border-b-slate-600'>
                 How It Works</li>
               <li className='pt-5 pb-4 border-b border-b-slate-600'>
-                Shop</li>
+                <Link to='/store'>Shop</Link></li>
             </ul>
             <ul className='font-display text-lg mt-20 md:text-3xl'>
               <li className='mb-4'>
