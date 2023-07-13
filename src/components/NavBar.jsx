@@ -16,7 +16,7 @@ const NavBar = () => {
         <Link to='/react-mcm-interior-design' className='font-display text-2xl'>
           Mid-Century Mindset</Link>
         <ul className='hidden lg:flex font-display gap-x-8'>
-          <li>How It Started</li>
+          <Link to='/react-mcm-interior-design/how-it-started'>How It Started</Link>
           <li>Explore</li>
           <li>How It Works</li>
           <li><Link to='/react-mcm-interior-design/store'>Store</Link></li>
@@ -37,8 +37,8 @@ const NavBar = () => {
         <div className='absolute flex w-full h-screen bg-secondary'>
           <div className='w-full h-fit px-5 pt-2 pb-8'>
             <ul className='font-display text-xl  md:text-3xl'>
-              <li className='pt-5 pb-4 border-b border-b-slate-600'>
-                How It Started</li>
+              <Link to='/react-mcm-interior-design/how-it-started' className='pt-5 pb-4 border-b border-b-slate-600'>
+                How It Started</Link>
               <li className='pt-5 pb-4 border-b border-b-slate-600'>
                 Explore</li>
               <li className='pt-5 pb-4 border-b border-b-slate-600'>

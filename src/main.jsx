@@ -12,6 +12,7 @@ import DecorPillows from './pages/DecorPillows.jsx'
 import Lighting from './pages/Lighting.jsx'
 import Cart from './pages/Cart.jsx'
 import Reviews from './pages/Reviews.jsx'
+import HowItStarted from './pages/HowItStarted'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/react-mcm-interior-design/reviews",
     element: <Reviews />
+  },
+  {
+    path: "/react-mcm-interior-design/how-it-started",
+    element: <HowItStarted />
   }
 ]);
 
