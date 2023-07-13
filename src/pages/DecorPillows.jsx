@@ -3,9 +3,9 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import ProdImg from '../assets/SofaCover.jpeg'
 import { AiOutlineSearch, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { Link } from'react-router-dom'
 
-const Store = () => {
+const DecorPillows = () => {
     const [search, setSearch] = React.useState(false);
     const [products, setProducts] = React.useState(true);
     const [colors, setColors] = React.useState(true);
@@ -36,11 +36,25 @@ const Store = () => {
                     Lighting</Link>
                 <li className='px-10'>
                     <AiOutlineSearch size={32} /></li>
-            </ul>   
+            </ul>
         </div>
         <div className='pl-10 py-10'>
             <h2 className='font-display text-5xl mb-5'>
-                Featured</h2>
+                Decor & Pillows</h2>
+            <div>
+                <span>
+                    <a href="/shop" className='font-body text-sm'>
+                        Shop </a>
+                </span>
+                <span>
+                    <span className='font-body text-sm'>
+                        / </span>
+                    <span>
+                        <a href="/shop/decor-pillows" className='font-body text-sm'>
+                            Decor & Pillows</a>
+                    </span>
+                </span>
+            </div>
         </div>
         <div className='px-6'>
             <div className='flex justify-between mx-5 py-4'>
@@ -49,7 +63,7 @@ const Store = () => {
             </div>
             <div>
                 <div className='flex gap-x-5'>
-                    <div className='bg-secondary p-4 flex flex-col w-1/4 h-fit rounded-lg'>
+                    <div className='bg-secondary p-4 flex flex-col w-1/4 h-fit rounded-xl'>
                         <div className='mb-10'>
                             <div className='flex justify-between items-center'>
                                 <h1 className='font-body text-xl'>Product Type</h1>
@@ -213,4 +227,4 @@ const Store = () => {
   )
 }
 
-export default Store
+export default DecorPillows

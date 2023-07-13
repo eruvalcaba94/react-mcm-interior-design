@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { BsFacebook, BsTwitter, BsInstagram, BsPinterest } from 'react-icons/bs';
 
@@ -25,7 +26,7 @@ const Footer = () => {
                     <h2 className='font-display mb-4 text-2xl'>Company</h2>
                     <ul>
                         <li className='mb-2'>Careers</li>
-                        <li className='mb-2'>Reviews</li>
+                        <Link to='/react-mcm-interior-design/reviews' className='mb-2'>Reviews</Link>
                         <li className='mb-2'>Pricings</li>
                         <li className='mb-2'>Stories</li>
                     </ul>
@@ -76,7 +77,7 @@ const Footer = () => {
                         : 'hidden'
                 }>
                     <li className='mb-2'>Careers</li>
-                    <li className='mb-2'>Reviews</li>
+                    <Link to='/react-mcm-interior-design/reviews' className='mb-2'>Reviews</Link>
                     <li className='mb-2'>Pricings</li>
                     <li className='mb-2'>Stories</li>
                 </ul>

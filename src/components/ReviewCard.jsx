@@ -2,6 +2,8 @@ import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
 
 const ReviewCard = ({ review }) => {
+  const { reviewerName, rating, reviewText } = review;
+
   const renderStarRating = (rating) => {
     const filledStars = Math.floor(rating);
     const hasHalfStar = rating % 1 !== 0;
@@ -19,14 +21,12 @@ const ReviewCard = ({ review }) => {
   };
 
   return (
-    <div className='flex flex-col w-full h-[330px]'>
-        <div className='flex flex-col mb-5'>
-            <h3 className="mb-2 font-medium">{review.reviewer}</h3>
-            <div className="flex items-center mt-2">
-                {renderStarRating(review.rating)}
-            </div>
-        </div>
-        <p className="flex w-[260px]">{review.comment}</p>
+    <div className="flex flex-col w-full h-[330px]">
+      <div className="flex flex-col mb-5">
+        <h3 className="mb-2 font-medium">{reviewerName}</h3>
+        <div className="flex items-center mt-2">{renderStarRating(rating)}</div>
+      </div>
+      <p className="flex w-[260px]">{reviewText}</p>
     </div>
   );
 };

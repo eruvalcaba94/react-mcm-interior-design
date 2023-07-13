@@ -1,8 +1,4 @@
 import React from 'react'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import ReviewCarousel from './components/ReviewCarousel'
-import DesignerCarousel from './components/DesignerCarousel'
 import Hero from './assets/green_purple_flower.jpg'
 import LivingRoom from './assets/white_livingroom.jpg'
 import SunlitBedroom from './assets/sunlight_bedroom.jpg'
@@ -10,30 +6,13 @@ import TVLivingroom from './assets/livingroom_tv.jpg'
 import Consulation from './assets/consultation.jpg'
 import Development from './assets/development.jpg'
 import InPerson from './assets/in-person.jpg'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import productReviews from './components/data/reviewsData'
+import ReviewCarousel from './components/ReviewCarousel'
+import DesignerCarousel from './components/DesignerCarousel'
 
 const App = () => {
-  const reviews = [
-    {
-      reviewer: 'John Doe',
-      rating: 4,
-      comment: 'Great product! I highly recommend it.',
-    },
-    {
-      reviewer: 'Jane Smith',
-      rating: 5,
-      comment: 'Excellent service and quality. Will buy again.',
-    },
-    {
-      reviewer: 'Doe Jane',
-      rating: 3,
-      comment: 'It was okay.'
-    },
-    {
-      reviewer: 'Smith John',
-      rating: 2,
-      comment: `wouldn't recommend to my worst enemy`
-    }
-  ];
 
   return (
     <div className='overflow-hidden'>
@@ -136,7 +115,7 @@ const App = () => {
           <h2 className='flex w-max font-display text-4xl'>Share the love!</h2>
         </div>
         <div className='py-10'>
-          <ReviewCarousel reviews={reviews} />
+          <ReviewCarousel productReviews={productReviews} />
         </div>
      </div>
       <Footer />

@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { BsFacebook, BsTwitter, BsInstagram, BsPinterest } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
-import Store from '../pages/Store'
+import React, {useState} from 'react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { BsFacebook, BsTwitter, BsInstagram, BsPinterest } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
 
   const toggleNav = () => {
-    setNav(!nav);
-  };
+    setNav(!nav)
+  }
 
   return (
     <div className='flex items-center bg-secondary w-auto h-[64px] sticky top-0 z-20'>
@@ -20,7 +19,7 @@ const NavBar = () => {
           <li>How It Started</li>
           <li>Explore</li>
           <li>How It Works</li>
-          <li><Link to='/store'>Shop</Link></li>
+          <li><Link to='/react-mcm-interior-design/store'>Store</Link></li>
         </ul>
         <ul className='hidden lg:flex font-display gap-x-3'>
           <li>Get Started</li>
@@ -65,7 +64,7 @@ const NavBar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default NavBar
