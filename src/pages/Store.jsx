@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import ProdImg from '../assets/SofaCover.jpeg'
+import Button from '../components/Button'
 import { AiOutlineSearch, AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
@@ -21,7 +22,7 @@ const Store = () => {
     }
 
 
-  return (
+    return (
     <div>
         <div>
             <NavBar />
@@ -38,18 +39,19 @@ const Store = () => {
                     <AiOutlineSearch size={32} /></li>
             </ul>   
         </div>
-        <div className='pl-10 py-10'>
-            <h2 className='font-display text-5xl mb-5'>
+        <div className='bg-secondary xl:bg-background xl:pl-10 py-10'>
+            <h2 className='font-display text-center xl:text-start text-5xl mb-5'>
                 Featured</h2>
         </div>
-        <div className='px-6'>
-            <div className='flex justify-between mx-5 py-4'>
-                <h1>Filter</h1>
-                <h1>Sort By</h1>
+        <div>
+            <div className='bg-secondary xl:bg-background w-full flex justify-center gap-x-5 xl:justify-end xl:pr-10 py-4'>
+                <Button text='Color' className='bg-slate-300 hover:bg-slate-400 font-body xl:hidden' />
+                <Button text='Product' className='bg-slate-300 hover:bg-slate-400 font-body xl:hidden' />
+                <Button text='Sort By' className='bg-slate-300 hover:bg-slate-400 font-body' />
             </div>
             <div>
                 <div className='flex gap-x-5'>
-                    <div className='bg-secondary p-4 flex flex-col w-1/4 h-fit rounded-lg'>
+                    <div className='bg-secondary hidden p-4 xl:flex flex-col w-1/4 h-fit rounded-lg'>
                         <div className='mb-10'>
                             <div className='flex justify-between items-center'>
                                 <h1 className='font-body text-xl'>Product Type</h1>
@@ -115,90 +117,90 @@ const Store = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div className='grid grid-cols-3 gap-6 mb-10'>
+                    <div className='px-6'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 xl:pt-0 mb-10'>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                             <div>
                                 <img src={ProdImg} alt="/" className='w-full h-auto rounded-xl' />
                                 <div className='flex flex-col items-start gap-x-10 pl-4'>
-                                    <h1>Product Name</h1>
-                                    <h1>Price</h1>  
+                                    <h1 className='font-body text-sm'>Product Name</h1>
+                                    <h1 className='font-body text-sm'>Price</h1>  
                                 </div>
                             </div>
                         </div>

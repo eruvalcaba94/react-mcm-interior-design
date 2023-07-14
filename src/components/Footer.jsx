@@ -18,11 +18,11 @@ const Footer = () => {
         setContact(!contact);
     };
 
-  return (
+    return (
     <div className='bg-accent w-full h-auto'>
         <div className='hidden lg:flex justify-between items-start w-auto pt-16 px-4 lg:px-20 xl:px-28 2xl:px-40  pb-10'>
             <div className='flex'>
-                <div className='mr-7 lg:mr-10'>
+                <div className='mr-5 lg:mr-10'>
                     <h2 className='font-display mb-4 text-2xl'>Company</h2>
                     <ul>
                         <li className='mb-2'>Careers</li>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <li className='mb-2'>Stories</li>
                     </ul>
                 </div>
-                <div className='mr-7 lg:mr-10'>
+                <div className='mr-5 lg:mr-10'>
                     <h2 className='font-display mb-4 text-2xl'>Explore</h2>
                     <ul>
                         <li className='mb-2'>Financing</li>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <li className='mb-2'>Promotions</li>
                     </ul>
                 </div>
-                <div>
+                <div className='mr-5'>
                     <h2 className='font-display mb-4 text-2xl'>Contact</h2>
                     <ul>
                         <li className='mb-2'>Call</li>
@@ -48,8 +48,17 @@ const Footer = () => {
                         <li className='mb-2'>Email</li>
                     </ul>
                 </div>
+                <div className='flex xl:hidden mr-16 flex-col'>
+                    <h2 className='font-display mb-4 w-max text-2xl'>Follow Us</h2>
+                    <ul className='flex gap-x-4 lg:grid lg:grid-cols-2 gap-y-6'>
+                        <li><BsFacebook size={23} /></li>
+                        <li><BsTwitter size={23} /></li>
+                        <li><BsInstagram size={23} /></li>
+                        <li><BsPinterest size={23} /></li>
+                    </ul>
+                </div>
             </div>
-            <div>
+            <div className='hidden xl:flex flex-col'>
                 <h2 className='font-display mb-4 w-max text-2xl'>Follow Us</h2>
                 <ul className='flex gap-x-3 lg:gap-x-5'>
                     <li><BsFacebook size={23} /></li>
@@ -134,7 +143,7 @@ const Footer = () => {
             </div>
         </div>
     </div>
-  );
+    );
 };
 
 export default Footer
