@@ -1,17 +1,19 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Button from '../components/Button'
 import ColorLiving from '../assets/color_living.jpg'
 import CoupleHappy from '../assets/couple-happy.jpg'
 import DiningTable from '../assets/diningroom.jpg'
 import Consult from '../assets/consulting.jpg'
 import Designers from '../assets/designers.jpg'
+import Sunset from '../assets/phx-sunset.jpg'
 
 const HowItStarted = () => {
   return (
     <div>
         <NavBar />
-        <img src={ColorLiving} alt="/" className='object-cover w-full xl:w-[2560px] h-[520px] md:h-auto xl:max-h-[750px]' />
+        <img src={ColorLiving} alt="/" className='hidden md:flex object-cover w-full h-auto xl:w-[2560px] xl:max-h-[450px]' />
         <div className='bg-secondary pt-4 px-4'>
             <div className='flex flex-col md:flex-row-reverse justify-center items-center gap-x-10 w-full'>
                 <div>
@@ -60,17 +62,20 @@ const HowItStarted = () => {
                     </p>
                 </div>
             </div>
-            <div>
-                <h1>Location:</h1>
-                <p>
-                    Based in the vibrant city of Phoenix, Arizona, Mid-Century Mindset draws inspiration from the rich cultural tapestry and stunning landscapes of the Southwest. We believe in creating designs that blend seamlessly with the local surroundings while maintaining a timeless appeal that transcends geographical boundaries.
-                </p>
+            <div className='flex flex-col justify-center items-center gap-y-5 lg:px-20 w-full pt-4 md:pt-20'>
+                <div className='w-full 2xl:flex justify-center'>
+                    <img src={Sunset} alt="/" className='object-cover object-bottom w-full xl:w-[1125px] h-[400px]' />
+                </div>
+                <div className='flex flex-col items-center md:pt-0 w-full px-3 pt-8'>
+                    <h1 className='font-display text-center text-2xl mb-4 md:mb-7'>
+                        Location</h1>
+                    <p className='font-body'>
+                        Based in the vibrant city of Phoenix, Arizona, Mid-Century Mindset draws inspiration from the rich cultural tapestry and stunning landscapes of the Southwest. We believe in creating designs that blend seamlessly with the local surroundings while maintaining a timeless appeal that transcends geographical boundaries.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h1>Get Started:</h1>
-                <p>
-                    Ready to embark on a design journey that will transform your space and reflect your personal style? Contact us today to schedule a consultation with one of our talented designers. Together, we will embark on a collaborative journey to create a home that speaks to your Mid-Century Mindset.
-                </p>
+            <div className='flex justify-center items-center py-10'>
+                <Button text='Get Started' className='bg-[#f55d42] hover:bg-[#da4c33] text-secondary text-xl font-display' />
             </div>
         </div>
         <Footer />

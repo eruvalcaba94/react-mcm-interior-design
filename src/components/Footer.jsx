@@ -24,11 +24,10 @@ const Footer = () => {
             <div className='flex'>
                 <div className='mr-5 lg:mr-10'>
                     <h2 className='font-display mb-4 text-2xl'>Company</h2>
-                    <ul>
+                    <ul className='flex flex-col'>
                         <li className='mb-2'>Careers</li>
                         <Link to='/react-mcm-interior-design/reviews' className='mb-2'>Reviews</Link>
-                        <li className='mb-2'>Pricings</li>
-                        <li className='mb-2'>Stories</li>
+                        <Link to='/react-mcm-interior-design/pricing' className='mb-2'>Pricings</Link>
                     </ul>
                 </div>
                 <div className='mr-5 lg:mr-10'>
@@ -37,7 +36,7 @@ const Footer = () => {
                         <li className='mb-2'>Financing</li>
                         <li className='mb-2'>Help Center</li>
                         <li className='mb-2 w-max'>Refer & Earn</li>
-                        <li className='mb-2'>Promotions</li>
+                        <Link to='/react-mcm-interior-design/promotions' className='mb-2'>Promotions</Link>
                     </ul>
                 </div>
                 <div className='mr-5'>
@@ -87,8 +86,7 @@ const Footer = () => {
                 }>
                     <li className='mb-2'>Careers</li>
                     <Link to='/react-mcm-interior-design/reviews' className='mb-2'>Reviews</Link>
-                    <li className='mb-2'>Pricings</li>
-                    <li className='mb-2'>Stories</li>
+                    <Link to='/react-mcm-interior-design/pricing' className='mb-2'>Pricings</Link>
                 </ul>
             </div>
             <div>
@@ -106,7 +104,7 @@ const Footer = () => {
                     <li className='mb-2'>Financing</li>
                     <li className='mb-2'>Help Center</li>
                     <li className='mb-2'>Refer & Earn</li>
-                    <li className='mb-2'>Promotions</li>
+                    <Link to='/react-mcm-interior-design/promotions' className='mb-2'>Promotions</Link>
                 </ul>
             </div>
             <div>
