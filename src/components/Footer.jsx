@@ -75,13 +75,13 @@ const Footer = () => {
             <div>
                 <h2 className='flex justify-between font-display text-xl pt-5 pb-4 border-b border-b-slate-600'>
                     Company
-                    <div onClick={toggleCompany}>
+                    <div onClick={toggleCompany} className='cursor-pointer'>
                         {company ? <AiOutlineMinus size={20} /> : <AiOutlinePlus size={20} />}
                     </div>
                 </h2>
                 <ul className={
                     company
-                        ? 'font-body p-3'
+                        ? 'flex flex-col font-body p-3'
                         : 'hidden'
                 }>
                     <li className='mb-2'>Careers</li>
@@ -92,7 +92,7 @@ const Footer = () => {
             <div>
                 <h2 className='flex justify-between font-display text-xl pt-5 pb-4 border-b border-b-slate-600'>
                     Explore
-                    <div onClick={toggleExplore}>
+                    <div onClick={toggleExplore} className='cursor-pointer'>
                         {explore ? <AiOutlineMinus size={20} /> : <AiOutlinePlus size={20} />}
                     </div>
                 </h2>
@@ -111,7 +111,7 @@ const Footer = () => {
                 <div>
                     <h2 className='flex justify-between font-display text-xl pt-5 pb-4 border-b border-b-slate-600'>
                         Contact
-                        <div onClick={toggleContact}>
+                        <div onClick={toggleContact} className='cursor-pointer'>
                             {contact ? <AiOutlineMinus size={20} /> : <AiOutlinePlus size={20} />}
                         </div>
                     </h2>

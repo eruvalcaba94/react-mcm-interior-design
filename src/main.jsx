@@ -15,6 +15,8 @@ import Reviews from './pages/Reviews.jsx'
 import HowItStarted from './pages/HowItStarted'
 import Pricing from './pages/Pricing.jsx'
 import Promotions from './pages/Promotions.jsx'
+import Explore from './pages/Explore'
+import HowItWorks from './pages/HowItWorks'
 
 const router = createBrowserRouter([
   {
@@ -57,6 +59,14 @@ const router = createBrowserRouter([
     path: "/react-mcm-interior-design/promotions",
     element: <Promotions />
   },
+  {
+    path: "/react-mcm-interior-design/explore",
+    element: <Explore />
+  },
+  {
+    path: "/react-mcm-interior-design/how-it-works",
+    element: <HowItWorks />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

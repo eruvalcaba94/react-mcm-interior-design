@@ -25,7 +25,7 @@ const NavBar = () => {
           <li>Get Started</li>
           <li>Login</li>
         </ul>
-        <div onClick={toggleNav} className='block lg:hidden'>
+        <div onClick={toggleNav} className='block cursor-pointer lg:hidden'>
           {nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
         </div>
       </div>
@@ -36,16 +36,20 @@ const NavBar = () => {
           }>
         <div className='absolute flex w-full h-screen bg-secondary'>
           <div className='w-full h-fit px-5 pt-2 pb-8'>
-            <ul className='font-display text-xl md:text-3xl'>
-              <li><Link to='/react-mcm-interior-design/how-it-started' className='pt-5 pb-4 border-b border-b-slate-600'>
-                How It Started</Link></li>
-              <li className='pt-5 pb-4 border-b border-b-slate-600'>
-                Explore</li>
-              <li className='pt-5 pb-4 border-b border-b-slate-600'>
-                How It Works</li>
-              <li className='pt-5 pb-4 border-b border-b-slate-600'>
-                <Link to='/react-mcm-interior-design/store'>Shop</Link></li>
-            </ul>
+            <div className='flex flex-col font-display text-xl md:text-3xl'>
+              <Link to='/react-mcm-interior-design/how-it-started' 
+              className='pt-5 pb-4 border-b border-b-slate-600'>
+                How It Started</Link>
+              <Link to='/react-mcm-interior-design/explore' 
+              className='pt-5 pb-4 border-b border-b-slate-600'>
+                Explore</Link>
+              <Link to='/react-mcm-interior-design/how-it-works' 
+              className='pt-5 pb-4 border-b border-b-slate-600'>
+                How It Works</Link>
+              <Link to='/react-mcm-interior-design/store' 
+              className='pt-5 pb-4 border-b border-b-slate-600'>
+                Shop</Link>
+            </div>
             <ul className='font-display text-lg mt-20 md:text-3xl'>
               <li className='mb-4'>
                 Login</li>
