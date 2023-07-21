@@ -10,7 +10,6 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import productReviews from "./components/data/reviewsData";
 import ReviewCarousel from "./components/ReviewCarousel";
-import DesignerCarousel from "./components/DesignerCarousel";
 
 const App = () => {
   return (
