@@ -15,12 +15,12 @@ const NavBar = () => {
       <div className='flex w-full px-4 md:px-8 lg:px-12 xl:px-20 justify-between'>
         <Link to='/react-mcm-interior-design' className='font-display text-2xl'>
           Mid-Century Mindset</Link>
-        <ul className='hidden lg:flex font-display gap-x-8'>
-          <li><Link to='/react-mcm-interior-design/how-it-started'>How It Started</Link></li>
-          <li>Explore</li>
-          <li>How It Works</li>
-          <li><Link to='/react-mcm-interior-design/store'>Store</Link></li>
-        </ul>
+        <div className='hidden lg:flex font-display gap-x-8'>
+          <Link to='/react-mcm-interior-design/how-it-started'>How It Started</Link>
+          <Link to='/react-mcm-interior-design/explore'>Explore</Link>
+          <Link to='/react-mcm-interior-design/how-it-works'>How It Works</Link>
+          <Link to='/react-mcm-interior-design/store'>Store</Link>
+        </div>
         <ul className='hidden lg:flex font-display gap-x-3'>
           <li>Get Started</li>
           <li>Login</li>
