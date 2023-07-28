@@ -46,7 +46,7 @@ const TalentCarousel = () => {
             />
 
             {isHovering && hoveredTalent === talent && (
-              <div className='absolute top-0 left-0 p-4 bg-black/75 w-full h-full text-white'>
+              <div className='absolute top-0 left-0 p-4 rounded-xl bg-black/75 w-full h-full text-white'>
                 <h2 className='font-display mb-3'>{talentData[talent].name}</h2>
                 <p className='font-body'>{talentData[talent].description}</p>
               </div>

@@ -1,14 +1,16 @@
-import React from "react";
+import { useButton } from "react-aria";
+import { useRef } from "react";
 
-const Button = ({ text, onClick, className }) => {
+function Button(props) {
+  let ref = useRef();
+  let { buttonProps } = useButton(props, ref);
+  let { children } = props;
+
   return (
-    <button
-      className={`transform duration-300 font-medium py-2 px-6 rounded-3xl ${className}`}
-      onClick={onClick}
-    >
-      {text}
+    <button {...buttonProps} ref={ref} className={props.className}>
+      {children}
     </button>
   );
-};
+}
 
 export default Button;

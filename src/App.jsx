@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import productReviews from "./components/data/reviewsData";
 import ReviewCarousel from "./components/ReviewCarousel";
+import Button from "./components/Button";
 
 const App = () => {
   return (
@@ -78,19 +79,24 @@ const App = () => {
             alt='Consultation Art'
             className='object-cover rounded-t-lg w-full h-auto'
           />
-          <h2 className='font-display text-3xl text-center pt-2 pb-3'>
-            Bronze Design Package
-          </h2>
-          <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
-            <span className='line-through font-normal pr-2 text-gray-400'>
-              $99
-            </span>
-            $50
-          </h3>
-          <p className='font-body font-light text-lg text-center lg:h-[160px] pb-5 px-6'>
-            Our experts will provide you with a comprehensive consultation to
-            assess your space and understand your goals.
-          </p>
+          <div className='flex flex-col items-center pb-5'>
+            <h2 className='font-display text-3xl text-center pt-2 pb-3'>
+              Bronze Design Package
+            </h2>
+            <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
+              <span className='line-through font-normal pr-2 text-gray-400'>
+                $99
+              </span>
+              $50
+            </h3>
+            <p className='font-body font-light text-lg text-center lg:h-[160px] px-6'>
+              Our experts will provide you with a comprehensive consultation to
+              assess your space and understand your goals.
+            </p>
+            <Button className='bg-[#f55d42] text-secondary font-body rounded-3xl px-4 py-2 w-fit'>
+              Learn More
+            </Button>
+          </div>
         </div>
         <div className='bg-background flex flex-col rounded-lg mb-10 lg:w-[365px]'>
           <img
@@ -98,19 +104,24 @@ const App = () => {
             alt='Consultation Art'
             className='object-cover rounded-t-lg w-full h-auto'
           />
-          <h2 className='font-display text-3xl text-center pt-2 pb-3'>
-            Silver Design Package
-          </h2>
-          <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
-            <span className='line-through font-normal pr-2 text-gray-400'>
-              $199
-            </span>
-            $150
-          </h3>
-          <p className='font-body font-light text-lg text-center lg:h-[160px] pb-5 px-6'>
-            Our team will help you source and select the perfect pieces to
-            elevate your space, ensuring a cohesive and stylish result.
-          </p>
+          <div className='flex flex-col items-center pb-5'>
+            <h2 className='font-display text-3xl text-center pt-2 pb-3'>
+              Silver Design Package
+            </h2>
+            <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
+              <span className='line-through font-normal pr-2 text-gray-400'>
+                $199
+              </span>
+              $150
+            </h3>
+            <p className='font-body font-light text-lg text-center lg:h-[160px] pb-5 px-6'>
+              Our team will help you source and select the perfect pieces to
+              elevate your space, ensuring a cohesive and stylish result.
+            </p>
+            <Button className='bg-[#f55d42] text-secondary font-body rounded-3xl px-4 py-2 w-fit'>
+              Learn More
+            </Button>
+          </div>
         </div>
         <div className='bg-background flex flex-col rounded-lg mb-10 lg:w-[365px]'>
           <img
@@ -118,20 +129,25 @@ const App = () => {
             alt='Consultation Art'
             className='object-cover rounded-t-lg w-full h-auto'
           />
-          <h2 className='font-display text-3xl text-center pt-2 pb-3'>
-            Gold Design Package
-          </h2>
-          <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
-            <span className='line-through font-normal pr-2 text-gray-400'>
-              $299
-            </span>
-            $250
-          </h3>
-          <p className='font-body font-light text-lg text-center pb-5 px-6'>
-            Our team will oversee the entire design process, from procurement to
-            installation, ensuring a seamless execution of your mid-century
-            modern vision.
-          </p>
+          <div className='flex flex-col items-center pb-5'>
+            <h2 className='font-display text-3xl text-center pt-2 pb-3'>
+              Gold Design Package
+            </h2>
+            <h3 className='font-body font-extrabold text-2xl text-center pb-4 text-[#f55d42]'>
+              <span className='line-through font-normal pr-2 text-gray-400'>
+                $299
+              </span>
+              $250
+            </h3>
+            <p className='font-body font-light text-lg text-center pb-5 px-6'>
+              Our team will oversee the entire design process, from procurement
+              to installation, ensuring a seamless execution of your mid-century
+              modern vision.
+            </p>
+            <Button className='bg-[#f55d42] text-secondary font-body rounded-3xl px-4 py-2 w-fit'>
+              Learn More
+            </Button>
+          </div>
         </div>
       </div>
       <div className='bg-secondary flex flex-col p-10 md:p-20'>
@@ -149,18 +165,24 @@ const App = () => {
             alt='TV Living Room'
             className='object-cover w-full lg:w-1/2 h-auto'
           />
-          <div className='text-center p-10 md:m-5'>
-            <p className='font-body pb-3'>Bring New Life Home</p>
+          <div className='flex flex-col items-center gap-5 text-center md:m-5'>
+            <p className='font-body'>Bring New Life Home</p>
             <h2 className='font-display text-3xl lg:text-5xl'>
               Shop furniture & decor curated by our interior designers
             </h2>
+            <Button className='bg-secondary font-body rounded-3xl px-4 py-2 w-fit'>
+              Shop Now
+            </Button>
           </div>
         </div>
       </div>
       <div className='bg-[#e7c3bb] flex flex-col lg:flex-row justify-center items-center mx-auto'>
-        <div className='flex flex-col justify-center items-center lg:pr-10'>
-          <h3 className='font-body font-medium py-4'>Reviews</h3>
+        <div className='flex flex-col justify-center items-center gap-4 lg:pr-10'>
+          <h3 className='font-body font-medium'>Reviews</h3>
           <h2 className='flex w-max font-display text-4xl'>Share the love!</h2>
+          <Button className='bg-secondary font-body rounded-3xl px-4 py-2'>
+            View All
+          </Button>
         </div>
         <div className='py-10'>
           <ReviewCarousel productReviews={productReviews} />

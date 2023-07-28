@@ -31,12 +31,8 @@ const Footer = () => {
             <h2 className='font-display mb-4 text-2xl'>Company</h2>
             <ul className='flex flex-col'>
               <li className='mb-2'>Careers</li>
-              <Link to='/react-mcm-interior-design/reviews' className='mb-2'>
-                Reviews
-              </Link>
-              <Link to='/react-mcm-interior-design/pricing' className='mb-2'>
-                Pricings
-              </Link>
+              <li className='mb-2'>Reviews</li>
+              <li className='mb-2'>Pricings</li>
             </ul>
           </div>
           <div className='mr-5 lg:mr-10'>
@@ -45,9 +41,7 @@ const Footer = () => {
               <li className='mb-2'>Financing</li>
               <li className='mb-2'>Help Center</li>
               <li className='mb-2 w-max'>Refer & Earn</li>
-              <Link to='/react-mcm-interior-design/promotions' className='mb-2'>
-                Promotions
-              </Link>
+              <li className='mb-2'>Promotions</li>
             </ul>
           </div>
           <div className='mr-5'>
@@ -117,12 +111,8 @@ const Footer = () => {
           </h2>
           <ul className={company ? "flex flex-col font-body p-3" : "hidden"}>
             <li className='mb-2'>Careers</li>
-            <Link to='/react-mcm-interior-design/reviews' className='mb-2'>
-              Reviews
-            </Link>
-            <Link to='/react-mcm-interior-design/pricing' className='mb-2'>
-              Pricings
-            </Link>
+            <li className='mb-2'>Reviews</li>
+            <li className='mb-2'>Pricings</li>
           </ul>
         </div>
         <div>
@@ -140,9 +130,7 @@ const Footer = () => {
             <li className='mb-2'>Financing</li>
             <li className='mb-2'>Help Center</li>
             <li className='mb-2'>Refer & Earn</li>
-            <Link to='/react-mcm-interior-design/promotions' className='mb-2'>
-              Promotions
-            </Link>
+            <li className='mb-2'>Promotions</li>
           </ul>
         </div>
         <div>

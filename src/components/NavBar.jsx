@@ -7,6 +7,7 @@ import {
   BsPinterest,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -27,11 +28,20 @@ const NavBar = () => {
           </Link>
           <Link to='/react-mcm-interior-design/reviews'>Reviews</Link>
           <Link to='/react-mcm-interior-design/how-it-works'>How It Works</Link>
-          <Link to='/react-mcm-interior-design/store'>Store</Link>
         </div>
         <ul className='hidden lg:flex font-display gap-x-3'>
-          <li>Get Started</li>
-          <li>Login</li>
+          <Button
+            onPress={() => alert("Button pressed!")}
+            className='bg-slate-600 text-white font-body rounded-3xl px-4 py-2 text-sm'
+          >
+            Get Started
+          </Button>
+          <Button
+            onPress={() => alert("Button pressed!")}
+            className='bg-slate-600 text-white font-body rounded-3xl px-4 py-2 text-sm'
+          >
+            Login
+          </Button>
         </ul>
         <div onClick={toggleNav} className='block cursor-pointer lg:hidden'>
           {nav ? <AiOutlineClose size={32} /> : <AiOutlineMenu size={32} />}
@@ -64,12 +74,6 @@ const NavBar = () => {
                 className='pt-5 pb-4 border-b border-b-slate-600'
               >
                 How It Works
-              </Link>
-              <Link
-                to='/react-mcm-interior-design/store'
-                className='pt-5 pb-4 border-b border-b-slate-600'
-              >
-                Shop
               </Link>
             </div>
             <ul className='font-display text-lg mt-20 md:text-3xl'>
